@@ -93,7 +93,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(135deg, rgba(11, 15, 26, 0.98) 0%, rgba(18, 24, 43, 0.95) 100%);
+    /* background: linear-gradient(135deg, rgba(11, 15, 26, 0.98) 0%, rgba(18, 24, 43, 0.95) 100%); */
+        background: rgba(16, 185, 129, 0.2);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 15px 0;
@@ -456,7 +457,8 @@ p {
 }
 
 .stat-card {
-    background: linear-gradient(135deg, var(--card-dark), #1a2a4d);
+    /* background: linear-gradient(135deg, var(--card-dark), #1a2a4d); */
+    background: rgba(16, 185, 129, 0.2);
     padding: 30px;
     border-radius: 12px;
     border: 1px solid rgba(0, 247, 255, 0.2);
@@ -528,7 +530,8 @@ p {
 }
 
 .course-card {
-    background: linear-gradient(135deg, var(--card-dark), #1a2a4d);
+    /* background: linear-gradient(135deg, var(--card-dark), #1a2a4d); */
+    background: rgba(16, 185, 129, 0.2);
     padding: 16px;
     border-radius: 16px;
     border: 1px solid rgba(0, 247, 255, 0.2);
@@ -726,7 +729,8 @@ p {
 }
 
 .why-us-card {
-    background: linear-gradient(135deg, var(--card-dark), #1a2a4d);
+    /* background: linear-gradient(135deg, var(--card-dark), #1a2a4d); */
+        background: rgba(16, 185, 129, 0.2);
     padding: 40px;
     border-radius: 12px;
     border: 1px solid rgba(0, 247, 255, 0.15);
@@ -892,7 +896,8 @@ p {
 /* ===== CTA Section ===== */
 .cta {
     text-align: center;
-    background: linear-gradient(135deg, #0d1330 0%, #050712 50%, #1a1f3a 100%);
+    /* background: linear-gradient(135deg, #0d1330 0%, #050712 50%, #1a1f3a 100%); */
+        background: rgba(16, 185, 129, 0.2);
 }
 
 .cta-buttons {
