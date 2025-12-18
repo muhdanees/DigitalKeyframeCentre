@@ -192,8 +192,9 @@ body {
 }
 
 section {
-    padding: 80px 16px;
+    padding: 40px 16px;
     box-sizing: border-box;
+    margin: auto;
 }
 
 h1,
@@ -204,7 +205,8 @@ h3 {
 
 h2 {
     margin-bottom: 20px;
-    font-size: 2.2rem;
+    font-size: 2rem;
+    line-height: 1.2;
 }
 
 p {
@@ -215,7 +217,7 @@ p {
 /* ===== Buttons ===== */
 .btn {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 6px 14px;
     margin-right: 15px;
     border-radius: 30px;
     text-decoration: none;
@@ -268,7 +270,7 @@ p {
 
 /* ===== Hero ===== */
 .hero {
-    min-height: 70vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -278,7 +280,7 @@ p {
 
 .heroSwiper {
     width: 100%;
-    height: 70vh;
+    height: 60vh;
 }
 
 .swiper-slide {
@@ -391,7 +393,7 @@ p {
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .hero-slide p {
@@ -417,6 +419,10 @@ p {
 }
 
 /* ===== About Section ===== */
+#about {
+    max-width: 1640px;
+    margin: auto;
+}
 .about-content {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -500,14 +506,18 @@ p {
     .stat-number {
         font-size: 2rem;
     }
+    #courses h2 {
+        text-align: center;
+    }
+    #courses p {
+        text-align: center;
+    }
 }
 
 /* ===== Courses Section ===== */
-#courses h2 {
-    text-align: center;
-}
-#courses p {
-    text-align: center;
+#courses {
+    max-width: 1640px;
+    margin: auto;
 }
 
 .courses-container {
@@ -704,6 +714,10 @@ p {
 }
 
 /* ===== Why Choose Us Section ===== */
+#why-us {
+    max-width: 1640px;
+    margin: auto;
+}
 .why-us-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -792,9 +806,11 @@ p {
 /* ===== Tools Section ===== */
 .tools {
     text-align: center;
-    background: linear-gradient(135deg, rgba(11, 15, 26, 0.8), rgba(26, 32, 64, 0.8));
+    /* background: linear-gradient(135deg, rgba(11, 15, 26, 0.8), rgba(26, 32, 64, 0.8)); */
     border-top: 2px solid rgba(0, 247, 255, 0.2);
-    border-bottom: 2px solid rgba(0, 247, 255, 0.2);
+    /* border-bottom: 2px solid rgba(0, 247, 255, 0.2); */
+    max-width: 1640px;
+    margin: auto;
 }
 
 .tools h2 {
@@ -903,6 +919,10 @@ form {
     max-width: 600px;
     margin-top: 30px;
 }
+#contact {
+    max-width: 1640px;
+    margin: auto;
+} 
 
 input,
 select {
@@ -934,7 +954,7 @@ select:focus {
 footer {
     text-align: center;
     padding: 30px;
-    border-top: 1px solid #222;
+    border-top: 1px solid #5133fd;
     color: var(--muted);
     font-size: 0.9rem;
 }
