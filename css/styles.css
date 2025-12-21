@@ -292,6 +292,11 @@ h2 {
     line-height: 1.2;
 }
 
+h2 i {
+    color: var(--pink);
+    margin-right: 12px;
+}
+
 p {
     color: var(--muted);
     max-width: 900px;
@@ -531,6 +536,11 @@ p {
     margin-top: 0;
 }
 
+.about-text h3 i {
+    color: var(--pink);
+    margin-right: 10px;
+}
+
 .about-text p {
     margin-bottom: 15px;
     line-height: 1.8;
@@ -638,6 +648,10 @@ p {
     box-sizing: border-box;
 }
 
+.course-card h3 {
+    margin-bottom: 12px;
+}
+
 /* .course-card::before {
     content: '';
     position: absolute;
@@ -675,6 +689,11 @@ p {
     margin: 0;
 }
 
+.course-header h3 i {
+    color: var(--pink);
+    margin-right: 8px;
+}
+
 .difficulty-badge {
     background: rgba(255, 45, 210, 0.2);
     color: var(--dark-green);
@@ -696,9 +715,14 @@ p {
 .course-meta {
     display: flex;
     gap: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid rgba(0, 247, 255, 0.1);
+}
+
+.course-meta i {
+    color: var(--mountain_neadow);
+    margin-right: 6px;
 }
 
 .course-duration,
@@ -725,6 +749,11 @@ p {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
+}
+
+.course-section h4 i {
+    color: var(--green);
+    margin-right: 8px;
 }
 
 .course-list {
@@ -867,6 +896,14 @@ p {
     margin-bottom: 20px;
     display: block;
     transition: transform 0.3s ease;
+}
+
+.why-us-icon i {
+    background: linear-gradient(135deg, var(--mountain_neadow), var(--pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: var(--mountain_neadow);
 }
 
 .why-us-card:hover .why-us-icon {
@@ -1033,8 +1070,8 @@ form {
     margin-top: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 12px;
-    row-gap: 2px;
+    column-gap: 20px;
+    row-gap: 1px;
 }
 
 form textarea,
@@ -1057,6 +1094,23 @@ form button {
 #contact {
     max-width: 1640px;
     margin: auto;
+}
+
+#contact p {
+    margin-bottom: 15px;
+}
+
+#contact p i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.fa-location-dot {
+    color: var(--pink);
+}
+
+.fa-phone {
+    color: var(--mountain_neadow);
 }
 
 input,
