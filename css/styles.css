@@ -197,6 +197,16 @@ a:hover {
 
 .mobile-menu-btn {
     display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--mountain_neadow);
+    transition: color 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+    color: var(--mountain_neadow);
 }
 
 /* Responsive Header */
