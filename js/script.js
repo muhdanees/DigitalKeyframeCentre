@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Contact Form Handling to Google Sheets
     const contactForm = document.getElementById('contactForm');
 
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzARYm-6uLSAKLcgJUbmwf9OtuSzgg3LjtHS7mPafI/exec";
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwVg8A2qQ5A8r4V_ECUmdypdDNJo4iB0ThOFLNIKhggVLqxP0XBBNWPmO9y6GqqYAhj/exec";
 
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
