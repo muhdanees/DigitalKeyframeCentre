@@ -161,6 +161,14 @@
                 <a href="#contact">Contact</a>
                 <a href="#enroll" class="btn btn-primary btn-small">Enroll Now</a>
             </nav>
+            <div class="mobile-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
         </div>
     </header>
 
@@ -736,17 +744,18 @@
         <h2>Contact Us</h2>
         <p>📍 Online At your workplace<br>📞 +91 9811614564 Connect with us on WhatsApp</p>
 
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Email">
-            <input type="tel" placeholder="Phone">
+        <form
+            onsubmit="event.preventDefault(); alert('Thank you for contacting Digital Keyframe Centre! We will get back to you shortly.');">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
             <select>
                 <option>Course Interest</option>
                 <option>2D Animation</option>
                 <option>2D Game Design</option>
                 <option>Game Development</option>
             </select>
-            <textarea placeholder="Your Message"></textarea>
+            <textarea placeholder="Your Message" required></textarea>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </section>
@@ -759,27 +768,8 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.heroSwiper', {
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            effect: 'fade',
-            fadeEffect: {
-                crossFade: true
-            }
-        });
-    </script>
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
 
 </body>
 
