@@ -86,6 +86,13 @@ body {
     line-height: 1.6;
     padding-top: 54px;
 }
+a {
+    color: inherit;
+}
+a:hover {
+    color: var(--neon);
+    text-decoration: none;
+}
 
 /* ===== Sticky Header ===== */
 .sticky-header {
@@ -835,6 +842,7 @@ p {
     color: var(--muted);
     margin-bottom: 40px;
     text-align: center;
+    max-width: 100%;
 }
 
 .tools-grid {
