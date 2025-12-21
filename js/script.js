@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
     // Initialize Swiper
     const swiper = new Swiper('.heroSwiper', {
         loop: true,
@@ -46,5 +47,46 @@ document.addEventListener('DOMContentLoaded', () => {
             crossFade: true
         }
     });
+
+    // Contact Form Handling to Google Sheets
+    const contactForm = document.getElementById('contactForm');
+
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzARYm-6uLSAKLcgJUbmwf9OtuSzgg3LjtHS7mPafI/exec";
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerText;
+
+            // Show Loading State
+            submitButton.innerText = 'Sending...';
+            submitButton.disabled = true;
+
+            const formData = new FormData(contactForm);
+
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert("Thank you! Your message has been sent successfully.");
+                        contactForm.reset();
+                    } else {
+                        throw new Error('Network response was not ok.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    alert("Oops! Something went wrong. Please try again later.");
+                })
+                .finally(() => {
+                    submitButton.innerText = originalText;
+                    submitButton.disabled = false;
+                });
+        });
+    }
 
 });
