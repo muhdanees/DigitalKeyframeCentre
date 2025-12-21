@@ -1019,8 +1019,29 @@ p {
 
 /* ===== Contact Section ===== */
 form {
-    max-width: 600px;
-    margin-top: 30px;
+    max-width: 800px;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+    row-gap: 2px;
+}
+
+form textarea,
+form button {
+    grid-column: span 2;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    form textarea,
+    form button {
+        grid-column: span 1;
+    }
 }
 
 #contact {
