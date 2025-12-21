@@ -547,7 +547,7 @@ p {
 
 .courses-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 50px;
 }
@@ -757,7 +757,7 @@ p {
     /* background: linear-gradient(135deg, var(--card-dark), #1a2a4d); */
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(40px);
-    padding: 40px;
+    padding: 20px;
     border-radius: 12px;
     /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); */
     border: 1px solid rgba(255, 255, 255, 0.2);
