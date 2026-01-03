@@ -14,7 +14,8 @@
         content="animation courses, game development training, web development academy, full-stack web dev, react js course, HTML CSS JavaScript training, 2D animation, game design, unity game development, MERN stack, frontend development">
 
     <meta name="author" content="Digital Keyframe Centre">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1, notranslate">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="theme-color" content="#0b0f1a">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -22,8 +23,19 @@
 
     <link rel="icon" type="image/svg+xml" href="/images/dkc-favicon.png">
     <link rel="apple-touch-icon" href="/images/dkc-favicon.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" as="style" href="css/styles.css">
+    <link rel="preload" as="script" href="js/script.js">
+    <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- DNS Prefetch for External Resources -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 
     <link rel="canonical" href="https://www.digitalkeyframecentre.com/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.digitalkeyframecentre.com/" />
@@ -66,6 +78,210 @@
             "email": "info@digitalkeyframecentre.com"
         },
         "areaServed": "Worldwide"
+    }
+    </script>
+
+    <!-- JSON-LD Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.digitalkeyframecentre.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Courses",
+                "item": "https://www.digitalkeyframecentre.com/#courses"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Contact",
+                "item": "https://www.digitalkeyframecentre.com/#contact"
+            }
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Digital Keyframe Centre",
+        "image": "https://www.digitalkeyframecentre.com/images/dkc-logo.png",
+        "description": "Professional animation and game development academy with 16+ years of industry expertise. Offering courses in 2D Animation, Game Development, and Web Development.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+        },
+        "telephone": "+91 9811614564",
+        "email": "info@digitalkeyframecentre.com",
+        "priceRange": "₹₹₹",
+        "sameAs": [
+            "https://www.facebook.com/digitalkeyframecentre",
+            "https://www.twitter.com/dkcentre",
+            "https://www.linkedin.com/company/digitalkeyframecentre",
+            "https://www.instagram.com/digitalkeyframecentre"
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What courses does Digital Keyframe Centre offer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer 6 comprehensive courses: 2D Animation Mastery, 2D Game Design & Art, Game Dev & Programming, Frontend Development, UI/UX Design Strategy, and 3D Modeling & Rendering. All courses are designed with industry expertise and include portfolio-building projects."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the job placement rate at Digital Keyframe Centre?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Digital Keyframe Centre has a 95% job placement rate with over 200+ students trained and placed in leading animation and gaming studios."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does each course take to complete?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Course durations range from 4 to 8 months depending on the program. Most courses are 6 months, with Game Dev being 8 months and UI/UX being 4 months."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer flexible payment options?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! We offer flexible payment options including UPI, debit/credit cards, net banking, digital wallets, and easy monthly installment plans designed for students and beginners."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are courses available online?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, all our courses are available as live online classes with expert instructors. You also get access to recorded sessions for revising concepts anytime."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.digitalkeyframecentre.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Courses",
+                "item": "https://www.digitalkeyframecentre.com/#courses"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Contact",
+                "item": "https://www.digitalkeyframecentre.com/#contact"
+            }
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Digital Keyframe Centre",
+        "image": "https://www.digitalkeyframecentre.com/images/dkc-logo.png",
+        "description": "Professional animation and game development academy with 16+ years of industry expertise. Offering courses in 2D Animation, Game Development, and Web Development.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+        },
+        "telephone": "+91 9811614564",
+        "email": "info@digitalkeyframecentre.com",
+        "priceRange": "₹₹₹",
+        "sameAs": [
+            "https://www.facebook.com/digitalkeyframecentre",
+            "https://www.twitter.com/dkcentre",
+            "https://www.linkedin.com/company/digitalkeyframecentre",
+            "https://www.instagram.com/digitalkeyframecentre"
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What courses does Digital Keyframe Centre offer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer 6 comprehensive courses: 2D Animation Mastery, 2D Game Design & Art, Game Dev & Programming, Frontend Development, UI/UX Design Strategy, and 3D Modeling & Rendering. All courses are designed with industry expertise and include portfolio-building projects."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the job placement rate at Digital Keyframe Centre?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Digital Keyframe Centre has a 95% job placement rate with over 200+ students trained and placed in leading animation and gaming studios."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does each course take to complete?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Course durations range from 4 to 8 months depending on the program. Most courses are 6 months, with Game Dev being 8 months and UI/UX being 4 months."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer flexible payment options?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! We offer flexible payment options including UPI, debit/credit cards, net banking, digital wallets, and easy monthly installment plans designed for students and beginners."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are courses available online?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, all our courses are available as live online classes with expert instructors. You also get access to recorded sessions for revising concepts anytime."
+                }
+            }
+        ]
     }
     </script>
 
@@ -248,7 +464,7 @@
                 <div class="swiper-slide">
                     <div class="hero-slide">
                         <img src="images/Spine-vs-Unity-2D-Animation-1024x576.jpg"
-                            alt="2D Animation Design - Learn character animation and motion design at Digital Keyframe Centre">
+                            alt="2D Animation Design - Learn character animation and motion design at Digital Keyframe Centre" loading="lazy" decoding="async">
                         <div class="hero-content">
                             <h1>Turn Your <span>Creativity</span> Into a Career<br>in Animation & Game Development</h1>
                             <p>Industry-focused training in 2D Animation, Game Design & Game Development with real
@@ -263,7 +479,7 @@
 
                 <div class="swiper-slide">
                     <div class="hero-slide">
-                        <img src="images/Gemini_Generated_Image_xpgywpxpgywpxpgy.png" loading="lazy"
+                        <img src="images/Gemini_Generated_Image_xpgywpxpgywpxpgy.png" loading="lazy" decoding="async"
                             alt="Full Stack Web Development - Master HTML, CSS, and JavaScript">
                         <div class="hero-content">
                             <h2>Become a <span>Frontend Developer</span><br>and Build the Modern Web</h2>
@@ -280,7 +496,7 @@
                 <!-- Slide 2 -->
                 <div class="swiper-slide">
                     <div class="hero-slide">
-                        <img src="images/LQbblBC5fDIWNmVFnm5yLj3aJYkKVUubLByLpmE8.jpg" loading="lazy"
+                        <img src="images/LQbblBC5fDIWNmVFnm5yLj3aJYkKVUubLByLpmE8.jpg" loading="lazy" decoding="async"
                             alt="Game Development training with Unity and Unreal Engine at Digital Keyframe Centre">
                         <div class="hero-content">
                             <h2>Master <span>Game Development</span> With Industry Experts</h2>
@@ -295,7 +511,7 @@
 
                 <div class="swiper-slide">
                     <div class="hero-slide">
-                        <img src="images/Gemini_Generated_Image_i8sx4ei8sx4ei8sx.png" loading="lazy"
+                        <img src="images/Gemini_Generated_Image_i8sx4ei8sx4ei8sx.png" loading="lazy" decoding="async"
                             alt="Master React, Vue, and Modern Frontend Frameworks">
                         <div class="hero-content">
                             <h2>Master <span>React & Modern Frameworks</span></h2>
@@ -313,7 +529,7 @@
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
                     <div class="hero-slide">
-                        <img src="images/Spine-vs-Unity-2D-Animation-1024x576.jpg" loading="lazy"
+                        <img src="images/Spine-vs-Unity-2D-Animation-1024x576.jpg" loading="lazy" decoding="async"
                             alt="Building professional animation and game development portfolio with industry projects">
                         <div class="hero-content">
                             <h2>Build a <span>Stunning Portfolio</span> While Learning</h2>
@@ -329,7 +545,7 @@
 
                 <div class="swiper-slide">
                     <div class="hero-slide">
-                        <img src="images/Gemini_Generated_Image_9ma65y9ma65y9ma6.png" loading="lazy"
+                        <img src="images/Gemini_Generated_Image_9ma65y9ma65y9ma6.png" loading="lazy" decoding="async"
                             alt="Responsive Web Design and UI Development">
                         <div class="hero-content">
                             <h2>Design for <span>Every Screen</span></h2>
@@ -356,7 +572,7 @@
 
     <!-- ===== About ===== -->
     <section id="about">
-        <h2><i class="fa-solid fa-users"></i> About Digital Keyframe Centre</h2>
+        <h1>About Digital Keyframe Centre</h1>
         <p>
             Digital Keyframe Centre empowers creative minds to become professional animators and game developers through
             practical learning, industry tools, and expert mentorship.
@@ -409,7 +625,7 @@
 
     <!-- ===== Courses ===== -->
     <section id="courses">
-        <h2><i class="fa-solid fa-graduation-cap"></i> Courses Offered</h2>
+        <h2>Courses Offered</h2>
         <p>Industry-focused courses designed to launch your creative career</p>
 
         <div class="courses-container">
@@ -690,7 +906,7 @@
 
     <!-- ===== Why Choose Us ===== -->
     <section id="why-us">
-        <h2><i class="fa-solid fa-star"></i> Why Choose Digital Keyframe Centre</h2>
+        <h2>Why Choose Digital Keyframe Centre</h2>
         <p>We combine industry expertise with innovative teaching methodologies to transform aspiring creatives into
             professional animators and game developers.</p>
 
@@ -783,7 +999,7 @@
 
     <!-- ===== Tools ===== -->
     <section class="tools">
-        <h2><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Technologies We Teach</h2>
+        <h2>Tools & Technologies We Teach</h2>
         <p>Master industry-standard tools used by professionals worldwide</p>
         <div class="tools-grid">
             <span class="tool-tag">Adobe Animate</span>
@@ -807,7 +1023,7 @@
 
     <!-- ===== Career CTA ===== -->
     <section class="cta" id="enroll">
-        <h2><i class="fa-solid fa-rocket"></i> Start Your Career in Animation & Gaming Today</h2>
+        <h2>Start Your Career in Animation & Gaming Today</h2>
         <div class="cta-buttons">
             <a href="#" class="btn btn-primary">Apply Now</a>
             <a href="#" class="btn btn-secondary">Talk to Counselor</a>
@@ -816,13 +1032,13 @@
 
     <!-- ===== Contact ===== -->
     <section id="contact">
-        <h2><i class="fa-solid fa-envelope"></i> Contact Us</h2>
+        <h2>Contact Us</h2>
         <p><i class="fa-solid fa-location-dot"></i> Online At your workplace</p>
         <p><i class="fa-solid fa-phone"></i> <a href="tel:+919811614564"
-                style="color: inherit; text-decoration: none;">+91 9811614564</a> | <i
-                class="fa-brands fa-whatsapp"></i> <a
+                style="color: inherit; text-decoration: none;">+91 9811614564</a> | <a
                 href="https://wa.me/919811614564?text=Hi,%20I%20am%20interested%20in%20your%20courses" target="_blank"
-                style="color: #25D366; text-decoration: none; font-weight: bold;">Connect with us on WhatsApp</a></p>
+                style="color: #25D366; text-decoration: none; font-weight: bold;"><i
+                class="fa-brands fa-whatsapp"></i>Connect with us on WhatsApp</a></p>
 
         <form id="contactForm">
             <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>

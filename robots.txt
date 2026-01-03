@@ -1,0 +1,45 @@
+# Robots.txt for Digital Keyframe Centre
+# Directive for all bots
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow admin and private directories (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Disallow search parameters to prevent duplicate content
+Disallow: /*?*
+Allow: /*.html$
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.svg$
+
+# Crawl Delay for non-priority bots
+Crawl-delay: 1
+
+# Specific directives for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific directives for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://www.digitalkeyframecentre.com/sitemap.xml
