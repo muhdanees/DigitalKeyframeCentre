@@ -307,6 +307,8 @@ h1,
 h2,
 h3 {
     color: var(--gray-dark);
+    line-height: 1.2;
+    margin-bottom: 12px;
 }
 
 h2 {
@@ -1154,7 +1156,6 @@ textarea {
     transition: all 0.3s ease;
     font-size: 1rem;
     animation: fadeInUp 0.8s ease-out;
-}
 }
 
 input:focus,
