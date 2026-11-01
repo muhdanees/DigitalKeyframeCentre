@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Toggle icon (Hamburger to X)
             const isOpen = navMenu.classList.contains('active');
+            mobileBtn.setAttribute('aria-expanded', isOpen);
             if (isOpen) {
                 mobileBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
             } else {
@@ -21,14 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
+                mobileBtn.setAttribute('aria-expanded', false);
                 mobileBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
             });
         });
     }
 
 
-    // Initialize Swiper
-    const swiper = new Swiper('.heroSwiper', {
+    // Initialize Swiper (only on pages that load it and have the hero slider)
+    if (typeof Swiper !== 'undefined' && document.querySelector('.heroSwiper')) new Swiper('.heroSwiper', {
         loop: true,
         autoplay: {
             delay: 5000,
@@ -57,6 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
+            // Silently drop submissions where the hidden honeypot field was filled (bots)
+            if (contactForm.elements.website && contactForm.elements.website.value) return;
+
             const submitButton = contactForm.querySelector('button[type="submit"]');
             const originalText = submitButton.innerText;
 
@@ -65,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitButton.disabled = true;
 
             const formData = new FormData(contactForm);
+            formData.delete('website');
 
             fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
